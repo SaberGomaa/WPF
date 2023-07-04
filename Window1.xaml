@@ -31,15 +31,15 @@
             </Button.Background>
         </Button>-->
 
-        
-        <!-- Markup Property -->
-        <Button Content="save" FontSize="22" Height="50" Width="120" Background="{x:Static SystemColors.ActiveCaptionBrush}" >
 
+        <!-- Markup Property -->
+        <Label Name="l1" FontSize="22" Foreground="red" Width="180" Height="70" Margin="340,51,340,334">
+            label
+        </Label>
+        <Button Content="save" Name="btn22" Click="btn22_Click" FontSize="22" Height="50" Width="120" Background="{x:Static SystemColors.ActiveCaptionBrush}" >
             <Button.Foreground>
                 <x:Static Member="SystemColors.ControlDarkBrush" ></x:Static>
             </Button.Foreground>
-
         </Button>
-        
     </Grid>
 </Window>

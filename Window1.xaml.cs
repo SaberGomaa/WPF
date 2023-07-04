@@ -25,6 +25,14 @@ namespace WpfApp
             //btn.Background = SystemColors.MenuHighlightBrush;
 
         }
+
+        private void btn22_Click(object sender, RoutedEventArgs e)
+        {
+            l1.Content ="new label";
+            //l1.Foreground = Brushes.Blue;
+            l1.Foreground = new SolidColorBrush(Color.FromRgb(0, 255, 255));
+
+        }
         //public void btn_clk()
         //{
         //    l1.SetValue(TagProperty, "label changed");
