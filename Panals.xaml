@@ -9,18 +9,28 @@
 
     <StackPanel Orientation="Vertical">
         
-    <StackPanel Orientation="Vertical">
-        <Button FontSize="26" Margin="10">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-    </StackPanel>
-    
-      <WrapPanel Orientation="Vertical">
-        <Button FontSize="26" Margin="10" Height="60">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-        <Button FontSize="26" Margin="10">Button</Button>
-    </WrapPanel>
+        <!--<StackPanel Orientation="Vertical">
+            <Button FontSize="26" Margin="10">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+        </StackPanel>
+          <WrapPanel Orientation="Vertical">
+            <Button FontSize="26" Margin="10" Height="60">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+            <Button FontSize="26" Margin="10">Button</Button>
+        </WrapPanel>-->
+        
+        <DockPanel Height="400">
+            <Button FontSize="26" Margin="10" DockPanel.Dock="Top">Top</Button>
+            <Button FontSize="26" Margin="10" DockPanel.Dock="Bottom">Bottom</Button>
+            <Button FontSize="26" Margin="10" DockPanel.Dock="Left" >Left</Button>
+            <Button FontSize="26" Margin="10" DockPanel.Dock="Right">Right</Button>
+            <WrapPanel>
+                
+            </WrapPanel>
+        </DockPanel>
+        
     </StackPanel>
 </Window>
