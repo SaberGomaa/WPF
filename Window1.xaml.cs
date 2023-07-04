@@ -22,7 +22,7 @@ namespace WpfApp
         public Window1()
         {
             InitializeComponent();
-            btn.Background = SystemColors.MenuHighlightBrush;
+            //btn.Background = SystemColors.MenuHighlightBrush;
 
         }
         //public void btn_clk()

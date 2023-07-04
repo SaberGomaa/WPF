@@ -16,8 +16,7 @@
         </Button>-->
 
         <!-- Complex Property -->
-        
-        <Button Name="btn"  Width="100" Height="50"  >
+        <!--<Button Name="btn"  Width="100" Height="50"  >
             <Button.Content>
                 <Image Source="saberJ.jpg"></Image>
             </Button.Content>
@@ -28,10 +27,19 @@
                 white
             </Button.Foreground>
             <Button.Background>
-                black
+                bLack
             </Button.Background>
+        </Button>-->
+
+        
+        <!-- Markup Property -->
+        <Button Content="save" FontSize="22" Height="50" Width="120" Background="{x:Static SystemColors.ActiveCaptionBrush}" >
+
+            <Button.Foreground>
+                <x:Static Member="SystemColors.ControlDarkBrush" ></x:Static>
+            </Button.Foreground>
+
         </Button>
-
-
+        
     </Grid>
 </Window>
