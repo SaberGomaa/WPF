@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="WPF" Height="450" Width="800"
+        ResizeMode="CanResize"
+        >
     <Grid>
-        
+        <!-- Simple Property -->
+        <!-- Type Converter -->
+        <Button Name="btn"  Width="100" Height="50"  Foreground="White" FontSize="26" FontWeight="Thin">
+            Save
+        </Button>
+        <Label Name="l1" FontSize="50" Foreground="Red" > label </Label>
     </Grid>
 </Window>

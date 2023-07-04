@@ -22,6 +22,12 @@ namespace WpfApp
         public Window1()
         {
             InitializeComponent();
+            btn.Background = SystemColors.MenuHighlightBrush;
+
         }
+        //public void btn_clk()
+        //{
+        //    l1.SetValue(TagProperty, "label changed");
+        //}
     }
 }
