@@ -11,9 +11,26 @@
     <Grid>
         <!-- Simple Property -->
         <!-- Type Converter -->
-        <Button Name="btn"  Width="100" Height="50"  Foreground="White" FontSize="26" FontWeight="Thin">
+        <!--<Button Name="btn"  Width="100" Height="50"  Foreground="White" FontSize="26" FontWeight="Thin">
             Save
+        </Button>-->
+
+        <!-- Complex Property -->
+        <Button Name="btn"  Width="100" Height="50"  >
+            <Button.Content>
+                Save
+            </Button.Content>
+            <Button.FontSize>
+                22
+            </Button.FontSize>
+            <Button.Background>
+                <ImageBrush ImageSource="saberJ.jpg"></ImageBrush>
+            </Button.Background>
+            <Button.Foreground>
+                white
+            </Button.Foreground>
         </Button>
-        <Label Name="l1" FontSize="50" Foreground="Red" > label </Label>
+
+
     </Grid>
 </Window>
