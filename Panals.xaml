@@ -64,13 +64,19 @@
             <Button Width="70" Height="40">Button</Button>
         </WrapPanel>
     </Grid>-->
+    <!--<UniformGrid>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+    </UniformGrid>-->
 
-    <UniformGrid>
-        <Button>B</Button>
-        <Button>B</Button>
-        <Button>B</Button>
-        <Button>B</Button>
-        <Button>B</Button>
-    </UniformGrid>
-    
+    <Viewbox>
+        <Canvas Width="200" Height="200">
+            <Button Background="Red" >Button</Button>
+            <Button Background="Black" Canvas.Top="10" Canvas.Left="10" Foreground="White">Button Button</Button>
+            <Button Background="Blue" Canvas.Top="25" >Button ButtonButton</Button>
+        </Canvas>
+    </Viewbox>
 </Window>
