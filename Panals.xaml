@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="Panals" Height="450" Width="800">
 
-    <StackPanel Orientation="Vertical">
-        
-        <!--<StackPanel Orientation="Vertical">
+    <!--<StackPanel Orientation="Vertical">
+        --><!--<StackPanel Orientation="Vertical">
             <Button FontSize="26" Margin="10">Button</Button>
             <Button FontSize="26" Margin="10">Button</Button>
             <Button FontSize="26" Margin="10">Button</Button>
@@ -21,16 +20,50 @@
             <Button FontSize="26" Margin="10">Button</Button>
             <Button FontSize="26" Margin="10">Button</Button>
         </WrapPanel>-->
-        
-        <DockPanel Height="400">
-            <Button FontSize="26" Margin="10" DockPanel.Dock="Top">Top</Button>
-            <Button FontSize="26" Margin="10" DockPanel.Dock="Bottom">Bottom</Button>
-            <Button FontSize="26" Margin="10" DockPanel.Dock="Left" >Left</Button>
-            <Button FontSize="26" Margin="10" DockPanel.Dock="Right">Right</Button>
+        <!--<DockPanel Height="400">
+            <Button FontSize="26" Height="60" DockPanel.Dock="Top">Top</Button>
+            <Button FontSize="26" DockPanel.Dock="Bottom">Bottom</Button>
+            <Button FontSize="26" Width="200" DockPanel.Dock="Left" >Left</Button>
+            <Button FontSize="26" DockPanel.Dock="Right">Right</Button>
             <WrapPanel>
-                
+                <Button FontSize="26" Margin="10">Top</Button>
+                <Button FontSize="26" Margin="10">Bottom</Button>
+                <Button FontSize="26" Margin="10">Left</Button>
+                <Button FontSize="26" Margin="10">Right</Button>
             </WrapPanel>
-        </DockPanel>
+        </DockPanel>--><!--
+    </StackPanel>-->
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         
-    </StackPanel>
+        <Button FontSize="30" Grid.Column="1" Grid.ColumnSpan="3">
+            button 1
+        </Button>
+
+        <Button FontSize="30" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2">
+            button 2
+        </Button>
+        <Button FontSize="30" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" >
+            button 3
+        </Button>
+        <WrapPanel Grid.Row="1">
+            <Button Width="70" Height="40">Button</Button>
+            <Button Width="70" Height="40">Button</Button>
+            <Button Width="70" Height="40">Button</Button>
+            <Button Width="70" Height="40">Button</Button>
+            <Button Width="70" Height="40">Button</Button>
+        </WrapPanel>
+    </Grid>
 </Window>
