@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfApp.ContentControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="ContentControl" Height="300" Width="300">
+
+    <!--<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Button Height="100">1</Button>
+            <Button Height="100">1</Button>
+        </StackPanel>
+    </ScrollViewer>-->
+    <!--<UniformGrid>
+        <Button>Button</Button>
+        <Button>
+            <Image Source="E:\c#\WpfApp\saberJ.jpg"> </Image>
+        </Button>
+        <Button>
+            <StackPanel>
+                <TextBox Text="name" Opacity=".5"></TextBox>
+                <Image Source="E:\c#\WpfApp\saberJ.jpg" Width="100" Height="100" ></Image>
+                <TextBlock> Bla bla </TextBlock>
+            </StackPanel>
+        </Button>
+    </UniformGrid>-->
+    <!--<GroupBox>
+        <GroupBox.Header>
+            <WrapPanel>
+                <TextBlock>Form</TextBlock>
+                <Image Source="E:\c#\WpfApp\saberJ.jpg" Height="20" Width="20"></Image>
+            </WrapPanel>
+        </GroupBox.Header>
+        <StackPanel>
+            <RadioButton>one</RadioButton>
+            <RadioButton>two</RadioButton>
+            <RadioButton>three</RadioButton>
+        </StackPanel>
+    </GroupBox>-->
+    <!--<TabControl TabStripPlacement="Left" FlowDirection="RightToLeft">
+        <TabItem Header="Form One" >
+            <StackPanel>
+                <RadioButton>one</RadioButton>
+                <RadioButton>two</RadioButton>
+                <RadioButton>three</RadioButton>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Form two">
+            <StackPanel>
+                <CheckBox>one</CheckBox>
+                <CheckBox>two</CheckBox>
+                <CheckBox>three</CheckBox>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Form three">
+            <StackPanel>
+                <RadioButton>one</RadioButton>
+                <RadioButton>two</RadioButton>
+                <RadioButton>three</RadioButton>
+            </StackPanel>
+        </TabItem>
+    </TabControl>-->
+    <!--<StackPanel>
+        <Expander Header="H one" Content="Bla Bla Bla"></Expander>
+        <Expander Header="H two" Content="Bla Bla Bla"></Expander>
+    </StackPanel>-->
+    
+</Window>
