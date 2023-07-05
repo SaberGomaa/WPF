@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="Panals" Height="450" Width="800">
-
+    
     <!--<StackPanel Orientation="Vertical">
         --><!--<StackPanel Orientation="Vertical">
             <Button FontSize="26" Margin="10">Button</Button>
@@ -33,9 +33,7 @@
             </WrapPanel>
         </DockPanel>--><!--
     </StackPanel>-->
-    
-    
-    <Grid>
+    <!--<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -65,5 +63,14 @@
             <Button Width="70" Height="40">Button</Button>
             <Button Width="70" Height="40">Button</Button>
         </WrapPanel>
-    </Grid>
+    </Grid>-->
+
+    <UniformGrid>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+        <Button>B</Button>
+    </UniformGrid>
+    
 </Window>
