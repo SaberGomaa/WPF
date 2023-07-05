@@ -66,5 +66,33 @@
         <Expander Header="H one" Content="Bla Bla Bla"></Expander>
         <Expander Header="H two" Content="Bla Bla Bla"></Expander>
     </StackPanel>-->
+    <!--<Border>
+        <StackPanel>
+            <Button>1</Button>
+            <Button>1</Button>
+            <Button>1</Button>
+        </StackPanel>
+    </Border>-->
+    <!--<StackPanel>
+        <Button Click="Button_Click" IsDefault="True">Ok</Button>
+        <Button Click="Button_Click_1" IsCancel="True">Cancel</Button>
+    </StackPanel>-->
+    <!--<StackPanel>
+        <ListBox>
+            <ListBoxItem>one</ListBoxItem>
+            <ListBoxItem>two</ListBoxItem>
+            <ListBoxItem>three</ListBoxItem>
+        </ListBox>
+        <ComboBox>
+            <ComboBoxItem IsSelected="True">one</ComboBoxItem>
+            <ComboBoxItem>two</ComboBoxItem>
+            <ComboBoxItem>three</ComboBoxItem>
+        </ComboBox>
+        <ListView>
+            <ListViewItem>one</ListViewItem>
+            <ListViewItem>two</ListViewItem>
+            <ListViewItem>three</ListViewItem>
+        </ListView>
+    </StackPanel>-->
     
 </Window>
