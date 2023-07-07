@@ -3,10 +3,46 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:datatype="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="Resource" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Window.Resources>
+        <Thickness x:Key="defaultMarginKey">
+            2
+        </Thickness>
+        <datatype:Double x:Key="DefaultFontSizeKey">
+            50
+        </datatype:Double>
+        <Brush x:Key="defaultColorKey">
+            Red
+        </Brush>
+    </Window.Resources>
+    
+    <StackPanel>
+        <TextBox Background="White"
+                 Foreground="{StaticResource defaultColorKey}"
+                 FontSize="{StaticResource DefaultFontSizeKey}" 
+                 Margin="{StaticResource defaultMarginKey}"
+                 >
+        </TextBox>
+        <TextBox Background="White"
+                 Foreground="{StaticResource defaultColorKey}"
+                 FontSize="{StaticResource DefaultFontSizeKey}" 
+                 Margin="{StaticResource defaultMarginKey}"
+                 >
+        </TextBox>
+        <TextBox Background="White"
+                 Foreground="{StaticResource defaultColorKey}"
+                 FontSize="{StaticResource DefaultFontSizeKey}" 
+                 Margin="{StaticResource defaultMarginKey}"
+                 >
+        </TextBox>
+        <TextBox Background="White"
+                 Foreground="{StaticResource defaultColorKey}"
+                 FontSize="{StaticResource DefaultFontSizeKey}" 
+                 Margin="{StaticResource defaultMarginKey}"
+                 >
+        </TextBox>
+    </StackPanel>
 </Window>
