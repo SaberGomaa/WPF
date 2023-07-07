@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp
 {
     /// <summary>
-    /// Interaction logic for Shapes.xaml
+    /// Interaction logic for Resource.xaml
     /// </summary>
-    public partial class Shapes : Window
+    public partial class Resource : Window
     {
-        public Shapes()
+        public Resource()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Resource resource = new Resource();
-            resource.Show();
         }
     }
 }

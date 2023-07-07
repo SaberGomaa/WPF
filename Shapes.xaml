@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Shapes" Height="450" Width="800">
-    <Canvas>
+        Title="Shapes" Height="300" Width="400"
+        ResizeMode="CanResize"  
+        Icon="E:\c#\WpfApp\saberJ.jpg"
+        >
+
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions  >
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Ellipse Stroke="Black" StrokeThickness="4" Stretch="Fill"></Ellipse>
+        <Button Click="Button_Click" Width="120" Height="50">  Go To Resource window</Button>
+        <Ellipse Stroke="Black" StrokeThickness="4" Grid.Column="1" Stretch="Uniform"></Ellipse>
+        <Ellipse Stroke="Black" StrokeThickness="4" Grid.Column="2" Stretch="UniformToFill"></Ellipse>
+
+    </Grid>
+    
+    <!--<Viewbox>
+        <Canvas Width="400" Height="300">
         <Rectangle Width="100" Height="100"
                    Fill="Black"
                    Stroke="red"
@@ -29,4 +48,5 @@
                  >
         </Polygon>
     </Canvas>
+    </Viewbox>-->
 </Window>

@@ -13,4 +13,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <PropertyPageSchema Remove="Resource.xaml" />
+  </ItemGroup>
+
 </Project>
