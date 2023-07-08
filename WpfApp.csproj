@@ -8,13 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="saberJ.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Remove="5.png" />
+    <None Remove="saberJ.jpg" />
   </ItemGroup>
 
+
   <ItemGroup>
-    <PropertyPageSchema Remove="Resource.xaml" />
+    <Content Include="5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="saberJ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

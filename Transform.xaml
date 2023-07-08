@@ -7,7 +7,32 @@
         mc:Ignorable="d"
         Title="Transform" Height="600" Width="600">
 
-    <StackPanel>
+    <WrapPanel>
+        <!-- Solid Brush -->
+        <Rectangle Fill="red" Width="100" Height="100"></Rectangle>
+
+        <!-- Linear Gradient -->
+        <Rectangle Width="100" Height="100">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="red" ></GradientStop>
+                    <GradientStop Color="White" Offset=".4"></GradientStop>
+                    <GradientStop Color="Black" Offset=".7"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- image Brush -->
+        <Rectangle Width="100" Height="100">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="5.png"></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Visual Brush -->
+    </WrapPanel>
+    
+    <!--<StackPanel>
         <Button Height="100" FontSize="30"
                 RenderTransformOrigin=".5,.5"
                 Panel.ZIndex="1"
@@ -34,8 +59,7 @@
         <Button Height="100" FontSize="30">three</Button>
         <Button Height="100" FontSize="30">four</Button>
 
-    </StackPanel>
-    
+    </StackPanel>-->
     <!--<Viewbox>
         <Canvas Width="400" Height="400">
         <Rectangle Width="100"
