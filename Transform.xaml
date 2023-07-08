@@ -5,9 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Transform" Height="400" Width="400">
-   
-    <Viewbox>
+        Title="Transform" Height="600" Width="600">
+
+    <StackPanel>
+        <Button Height="100" FontSize="30"
+                RenderTransformOrigin=".5,.5"
+                Panel.ZIndex="1"
+                Width="150"
+                >
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="45"></RotateTransform>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            one</Button>
+        <Button Height="100" FontSize="30"
+                RenderTransformOrigin=".5,.5"
+                Panel.ZIndex="1"
+                Width="150"
+                >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="45"></RotateTransform>
+                </TransformGroup>
+            </Button.RenderTransform>
+            two
+        </Button>
+        <Button Height="100" FontSize="30">three</Button>
+        <Button Height="100" FontSize="30">four</Button>
+
+    </StackPanel>
+    
+    <!--<Viewbox>
         <Canvas Width="400" Height="400">
         <Rectangle Width="100"
                    Height="100"
@@ -32,5 +61,5 @@
             </Rectangle.RenderTransform>
         </Rectangle>
     </Canvas>
-    </Viewbox>
+    </Viewbox>-->
 </Window>
