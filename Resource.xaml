@@ -43,13 +43,27 @@
             <Setter Property="FrameworkElement.Height" Value="120"></Setter>
             <Setter Property="Control.Foreground" Value="White"></Setter>
         </Style>
+        
+        <!-- Target Type Style -->
+        <Style TargetType="TextBox">
+            <Style.Setters>
+                <Setter Property="Background" Value="Black"></Setter>
+                <Setter Property="Foreground" Value="White"></Setter>
+                <Setter Property="Height" Value="80"></Setter>
+            </Style.Setters>
+        </Style>
+        
     </Window.Resources>
     <StackPanel>
 
-        <Rectangle Style="{StaticResource ResourceKey=mixStyle}"></Rectangle>
-        <Button Style="{DynamicResource mixStyle}">Button</Button>
+        <TextBox></TextBox>
+        <TextBox></TextBox>
+        <TextBox Style="{x:Null}"></TextBox>
+        <TextBox Style="{StaticResource mixStyle}"></TextBox>
         
-        <!--<TextBox
+        <!--<Rectangle Style="{StaticResource ResourceKey=mixStyle}"></Rectangle>
+        <Button Style="{DynamicResource mixStyle}">Button</Button>
+       <TextBox
              Style="{StaticResource DefaultStyleKey}"
             >
         </TextBox>
