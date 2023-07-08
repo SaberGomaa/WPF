@@ -45,7 +45,7 @@
         </Style>
         
         <!-- Target Type Style -->
-        <Style TargetType="TextBox">
+        <Style TargetType="TextBox" BasedOn="{StaticResource mixStyle}">
             <Style.Setters>
                 <Setter Property="Background" Value="Black"></Setter>
                 <Setter Property="Foreground" Value="White"></Setter>
