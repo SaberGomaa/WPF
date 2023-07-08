@@ -24,7 +24,13 @@
                  Foreground="{StaticResource defaultColorKey}"
                  FontSize="{StaticResource DefaultFontSizeKey}" 
                  Margin="{StaticResource defaultMarginKey}"
+                 FontWeight="{DynamicResource LocalFontFamily}"
                  >
+            <TextBox.Resources>
+                <FontWeight  x:Key="LocalFontFamily">
+                    Bold
+                </FontWeight>
+            </TextBox.Resources>
         </TextBox>
         <TextBox Background="White"
                  Foreground="{StaticResource defaultColorKey}"
@@ -44,5 +50,6 @@
                  Margin="{StaticResource defaultMarginKey}"
                  >
         </TextBox>
+        <Button Width="100" Height="40" Click="Button_Click" >Back</Button>
     </StackPanel>
 </Window>
