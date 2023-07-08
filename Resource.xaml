@@ -17,10 +17,41 @@
         <Brush x:Key="defaultColorKey">
             Red
         </Brush>
+        
+        <!-- Named Style -->
+        <Style x:Key="DefaultStyleKey">
+            <Style.Setters>
+                <Setter Property="Control.Margin" Value="5 0"></Setter>
+                <Setter Property="Control.FontSize" Value="50"></Setter>
+                <Setter Property="Control.Background" Value="red"> </Setter>
+            </Style.Setters>
+        </Style>
+        <Style x:Key="DefaultShapeStyle">
+            <Style.Setters>
+                <Setter Property="Shape.Fill" Value="Yellow"></Setter>
+                <Setter Property="Shape.Stroke" Value="Black"></Setter>
+                <Setter Property="Shape.StrokeThickness" Value="5"></Setter>
+                <Setter Property="Shape.Height" Value="70"></Setter>
+            </Style.Setters>
+        </Style>
     </Window.Resources>
     
     <StackPanel>
-        <TextBox Background="White"
+        <TextBox
+             Style="{StaticResource DefaultStyleKey}"
+            >
+        </TextBox>
+        <TextBox
+             Style="{StaticResource DefaultStyleKey}"
+            >
+        </TextBox>
+        <TextBox
+             Style="{StaticResource DefaultStyleKey}"
+            >
+        </TextBox>
+        <Rectangle Style="{StaticResource DefaultShapeStyle}"> </Rectangle>
+        <TextBox 
+                 Background="White"
                  Foreground="{StaticResource defaultColorKey}"
                  FontSize="{StaticResource DefaultFontSizeKey}" 
                  Margin="{StaticResource defaultMarginKey}"
