@@ -7,19 +7,30 @@
         mc:Ignorable="d"
         Title="Binding" Height="450" Width="800">
     <StackPanel>
-        <TextBlock FontSize="20" HorizontalAlignment="Center" > Slider </TextBlock>
-        <Slider
-            x:Name="slide" 
-            Minimum="10" 
-            Maximum="100" 
-            TickFrequency="10" 
-            TickPlacement="TopLeft"
-            Value="40"
-            >
-            <!--Value="{Binding ElementName=txt_box , Path=Text}"-->
-        </Slider>
-
-
+        <WrapPanel>
+            <StackPanel>
+                <Label> Font Size </Label>
+                <Slider Width="200"
+                    x:Name="slide" 
+                    Minimum="10" 
+                    Maximum="100" 
+                    TickFrequency="10" 
+                    TickPlacement="TopLeft"
+                    Value="40"
+                    >
+                    <!--Value="{Binding ElementName=txt_box , Path=Text}"-->
+                </Slider>
+            </StackPanel>
+            <StackPanel Margin="20 0 0 0">
+                <Label>Font Color</Label>
+                <ComboBox x:Name="colors" Width="50"  >
+                    <ComboBoxItem IsSelected="True">Red</ComboBoxItem>
+                    <ComboBoxItem >Blue</ComboBoxItem>
+                    <ComboBoxItem >Green</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            
+        </WrapPanel>
         <TextBlock 
             FontSize="20"
             HorizontalAlignment="Center"
@@ -30,6 +41,7 @@
             x:Name="txt_box"
             FontSize="{Binding ElementName=slide , Path=Value }" 
             Text="{Binding ElementName=slide , Path=Value , Mode=TwoWay}"
+            Foreground="{Binding ElementName=colors , Path=SelectedItem.Content}"
             >
         </TextBox>
     
