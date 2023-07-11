@@ -12,6 +12,15 @@
             <TextBox Margin="20 0 0 0 " x:Name="index" Width="200"></TextBox>
             <Button x:Name="btn" Click="btn_Click"> Get Data </Button>
         </WrapPanel>
+        <ComboBox x:Name="EmpsCom" Width="100" Margin="15"  SelectionChanged="EmpsCom_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                    </WrapPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
         <TextBox x:Name="ID" Text="{Binding Path=Id}"></TextBox>
         <TextBox x:Name="Name" Text="{Binding Path=Name}"></TextBox>
         <TextBox x:Name="Age" Text="{Binding Path=Age}"></TextBox>
