@@ -11,6 +11,7 @@ namespace WpfApp
         public static List<Employee> Emps { get; set; }
         static EmployeeList()
         {
+            Emps = new List<Employee>();
             Emps.Add(new Employee() { Id = 1 , Name = "Maher", Age=27 , Jop="Enginner"});
             Emps.Add(new Employee() { Id = 2 , Name = "Saber" , Age=23 , Jop="Enginner"});
             Emps.Add(new Employee() { Id = 3 , Name = "Eman" , Age=29 , Jop="Teacher"});
