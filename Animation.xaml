@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Animation" Height="450" Width="800">
     <Grid>
-        
+        <Rectangle  x:Name="Rec" Width="200" Height="200" Fill="red" MouseEnter="Rectangle_MouseEnter" ></Rectangle>
     </Grid>
 </Window>
