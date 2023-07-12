@@ -32,14 +32,13 @@ namespace WpfApp
             //Jop.DataContext = Emp;
 
             //EmpPanal.DataContext = Emp;
-            EmpsCom.ItemsSource = EmployeeList.Emps;
+            //EmpsCom.ItemsSource = EmployeeList.Emps;
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
             int x = int.Parse(index.Text);
             EmpPanal.DataContext =EmployeeList.Emps[x];
-
         }
 
         private void EmpsCom_SelectionChanged(object sender, SelectionChangedEventArgs e)

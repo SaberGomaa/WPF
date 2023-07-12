@@ -12,7 +12,7 @@
             <TextBox Margin="20 0 0 0 " x:Name="index" Width="200"></TextBox>
             <Button x:Name="btn" Click="btn_Click"> Get Data </Button>
         </WrapPanel>
-        <ComboBox x:Name="EmpsCom" Width="100" Margin="15"  SelectionChanged="EmpsCom_SelectionChanged">
+        <ComboBox x:Name="EmpsCom" Width="100" Margin="15" ItemsSource="{x:Static local:EmployeeList.Emps}"  SelectionChanged="EmpsCom_SelectionChanged">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
