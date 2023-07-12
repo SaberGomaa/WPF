@@ -47,9 +47,14 @@
         </Style>
     </Window.Resources>
     
-    <WrapPanel>
-        <Rectangle Width="200" Height="200">
-        </Rectangle>
-        <Rectangle Width="200" Height="200" Fill="Red"></Rectangle>
-    </WrapPanel>
+    <StackPanel>
+        <WrapPanel>
+            <Rectangle Width="200" Height="200">
+            </Rectangle>
+            <Rectangle Width="200" Height="200" Fill="Red"></Rectangle>
+            <Rectangle Width="200" Height="200" Fill="Black"></Rectangle>
+        </WrapPanel>
+        <TextBlock FontSize="30" Foreground="Black"></TextBlock>
+        <TextBlock FontSize="30" Background="White"></TextBlock>
+    </StackPanel>
 </Window>
