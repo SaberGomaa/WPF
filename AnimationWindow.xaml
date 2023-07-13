@@ -45,16 +45,63 @@
                 </EventTrigger>
             </Style.Triggers>
         </Style>
+        <Style x:Key="welcomeStyle" >
+            <Style.Setters>
+                <Setter Property="TextBlock.FontSize" Value="30"></Setter>
+            </Style.Setters>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation 
+                                From="30" 
+                                To="70"
+                                Storyboard.TargetProperty="FontSize"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever"
+                                >
+                            </DoubleAnimation>
+                            
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
     
     <StackPanel>
+        
         <WrapPanel>
             <Rectangle Width="200" Height="200">
             </Rectangle>
             <Rectangle Width="200" Height="200" Fill="Red"></Rectangle>
             <Rectangle Width="200" Height="200" Fill="Black"></Rectangle>
         </WrapPanel>
-        <TextBlock FontSize="30" Foreground="Black"></TextBlock>
-        <TextBlock FontSize="30" Background="White"></TextBlock>
+        
+        <TextBlock FontSize="30" Style="{StaticResource welcomeStyle}" Foreground="Black">Hello </TextBlock>
+        <TextBlock x:Name="Twelcome" FontSize="30" Foreground="Black">
+            <TextBlock.Triggers >
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation 
+                                From="30" 
+                                To="70"
+                                Storyboard.TargetProperty="FontSize"
+                                Storyboard.TargetName="Twelcome"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever"
+                                BeginTime="0:0:2"
+                                
+                                >
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+            Welcome</TextBlock>
+    
     </StackPanel>
 </Window>
